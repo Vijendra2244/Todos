@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import styles from "../css/Navbar.module.css"; // Assuming you have some CSS styles
-
+import { useNavigate } from "react-router-dom";
 function SignUp() {
   const [formData, setFormData] = useState({
     firstName: "",
@@ -10,7 +10,7 @@ function SignUp() {
     password: "",
     age: "",
   });
-
+  const nav = useNavigate();
   const [error, setError] = useState("");
   const [success, setSuccess] = useState("");
 
@@ -27,9 +27,17 @@ function SignUp() {
     try {
       const response = await axios.post(
         "https://todos-tz6o.onrender.com/users/register",
-        formData
+        formData,
+        {
+          withCredentials: true,
+        }
       );
       setSuccess(response.data.msg); // Display success message
+      setTimeout(() => {
+        if (response.data.msg === "User registered successfully") {
+          nav("/login");
+        }
+      }, 3000);
     } catch (err) {
       setError(
         err.response?.data?.msg || "An error occurred during registration."
