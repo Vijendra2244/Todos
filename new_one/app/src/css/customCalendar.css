@@ -1,0 +1,314 @@
+.outerCalendarDiv {
+  /* border: 2px solid black; */
+  text-align: center;
+  /* position: absolute; */
+  background-color: white;
+  width: 95%;
+  padding: 10px 0 0 5px;
+}
+
+.cancelDivCC {
+  /* border: 1px solid red; */
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+.cancelDivCC:hover {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.DividerCC {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 103% !important;
+  margin-left: 8px;
+}
+
+.firstInnerCalendarDiv {
+  border: 1px solid black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+  margin-top: 10px;
+  margin-left: 8px;
+}
+
+.input {
+  /* border: 1px solid red; */
+  padding: 5px;
+  width: 70%;
+  border-radius: 6px;
+  margin-left: 5px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.secondInnerCalendarDiv {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.secondInnermostDiv {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 12px; */
+  cursor: pointer;
+  padding: 5px;
+}
+.secondInnermostDiv:hover{
+  
+  background-color: #7676801f;
+}
+
+.thirdInnerCalendarDiv {
+  /* border: 1px solid purple; */
+  position: relative !important;
+}
+
+.innerImageDiv {
+  display: flex;
+  align-items: center;
+  width: 55%;
+  /* border: 1px solid black; */
+  margin-left: 5px;
+}
+
+.innerImageDiv p {
+  /* border: 1px solid red; */
+  margin-left: 12px;
+  font-weight: 600;
+}
+
+.innerImageDiv2 {
+  width: 45%;
+  /* border: 1px solid red; */
+  color: #00000099;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 5px;
+}
+
+.fourthInnerCalendarDiv {
+  /* border: 1px solid red; */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  margin-bottom: 10px;
+  margin-left: 4px;
+}
+
+.inputDivForTimeCC {
+  /* border: 1px solid brown; */
+  display: flex;
+  /* justify-content: flex-start; */
+  align-items: center;
+  width: 35%;
+}
+
+.inputDivForTimeCC input:nth-child(1) {
+  border: 1px solid black;
+  /* width: 30%; */
+}
+.inputDivForTimeCC input:nth-child(3) {
+  border: 1px solid black;
+  width: 30%;
+}
+
+.timePicker {
+  height: 50px;
+  /* border: 1px solid red; */
+  width: 50px;
+  font-size: 18px;
+}
+
+/* //time */
+
+.TimeDiv {
+  /* border: 1px solid red; */
+  margin-right: 2.8rem;
+  margin-left: 0.8rem;
+  font-weight: 500;
+}
+
+.timeInputDivCC {
+  /* border: 1px solid red; */
+  width: 30%;
+  margin-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+}
+
+.timeInputDivCC select:nth-child(1) {
+  /* border: 1px solid red; */
+  width: 47%;
+  height: 40px;
+  text-align: center;
+  background-color: #7676801f;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.timeInputDivCC > span {
+  background-color: #7676801f;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.timeInputDivCC select:nth-child(3) {
+  /* border: 1px solid red; */
+  width: 47%;
+  height: 40px;
+  text-align: center;
+  background-color: #7676801f;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.timeInputDivCC select option {
+  background-color: #fff;
+  color: #000;
+  font-size: 16px;
+  padding: 10px;
+}
+.timeInputDivCC select:hover {
+  cursor: pointer;
+}
+
+.timeInputDivCC select::-webkit-scrollbar {
+  width: 8px;
+}
+.timeInputDivCC select::-webkit-scrollbar-thumb {
+  background-color: #7676801f;
+  border-radius: 10px;
+}
+
+.timeInputDivCC select::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.AMPMButtonDivCC {
+  /* border: 1px solid black; */
+  background-color: #7676801f;
+  width: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+  border-radius: 5px;
+}
+
+.AMPMButtonDivCC button:nth-child(1) {
+  font-size: 16px;
+  width: 40%;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.AMPMButtonDivCC button:nth-child(2) {
+  font-size: 16px;
+  width: 40%;
+  height: 30px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+/* .calenderdays:hover{
+  background-color: #7676801f;
+} */
+
+.activeBtn {
+  background-color: white;
+}
+.disableBtn {
+  color: grey;
+}
+
+/* save button */
+.saveDivCC {
+  /* border: 1px solid red; */
+  margin-top: 10px;
+  margin-bottom: 15px;
+  text-align: end;
+}
+
+.cancelBtnCC {
+  border: none;
+  outline: none;
+  margin-right: 1.5rem;
+  cursor: pointer;
+  width: 65px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #e0e0e0;
+  font-size: 14px;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+.saveBtnCC {
+  border: none;
+  outline: none;
+  margin-right: 2rem;
+  cursor: pointer;
+  width: 65px;
+  height: 35px;
+  border-radius: 5px;
+  background-color: #2196f3;
+  color: white;
+  font-size: 14px;
+  padding: 5px;
+  letter-spacing: 1px;
+}
+
+ .css-4pax7l-MuiPickersLayout-root .MuiPickersLayout-toolbar {
+  display: none !important;
+}
+
+.css-4pax7l-MuiPickersLayout-root .MuiPickersLayout-actionBar {
+  display: none !important;
+}
+
+.css-1q04gal-MuiDateCalendar-root {
+  max-height: 300px !important;
+}  
+
+/* time picker */
+/* .css-1yq5fb3-MuiButtonBase-root-MuiIconButton-root{
+    display: none;   */
+/*to remove the clock icon on the right*/
+/* } */
+
+/* .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+width: 155px;
+height: 40px;
+} */
+
+/* 
+.MuiInputBase-root.MuiOutlinedInput-root.MuiInputBase-colorPrimary.Mui-focused.MuiInputBase-formControl.MuiInputBase-adornedEnd .css-o9k5xi-MuiInputBase-root-MuiOutlinedInput-root{
+display: none;
+} */
+
+/* .base-Popper-root.MuiPickersPopper-root.css-1anqmj6-MuiPopper-root-MuiPickersPopper-root{
+    position: absolute !important;
+    top: 50% !important;
+} */

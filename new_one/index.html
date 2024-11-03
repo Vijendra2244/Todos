@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #overlay {
+        width: 100%;
+        /* border: 1px solid red; */
+        position: relative;
+        display: none;
+        height: 100vh;
+      }
+      #modal {
+        border: 1px solid black;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      body {
+        height: 200vh;
+      }
+    </style>
+  </head>
+  <body>
+    <button id="btn">click</button>
+    <input type="text" id="inp"  />
+    <div id="overlay">
+      <div id="modal">modal</div>
+    </div>
+    <script src="./index.js"></script>
+    <script src="./Practice.js"></script>
+  </body>
+</html>

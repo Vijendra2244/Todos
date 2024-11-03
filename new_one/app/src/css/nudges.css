@@ -1,0 +1,123 @@
+.nudgesOuterDiv {
+    /* border: 1px solid red; */
+    box-shadow: 0px -4px 14px 0px #0000000F, 12px 12px 10px 8px #00000008, -6px 6px 8px -3px #0000000A;
+    position: relative;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 0 10px 0;
+    overflow: hidden;
+    background-color: white;
+    z-index: 999;
+}
+
+.closeSvgDiv {
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    cursor: pointer;
+}
+
+.closeSvgDiv:hover{
+    /* box-shadow: 0px 0px 1px rgba(0,0,0.1);
+    border-radius: 50%; */
+}
+
+.imageDiv {
+    /* border: 1px solid black; */
+    width: 70px;
+}
+
+.titleName {
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 3px;
+}
+
+.desc {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 8px;
+    text-align: center;
+}
+
+.buttonsDivNG {
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.button1NG, .button2NG{
+    border: none;
+    outline: none;
+    width: 60px;
+    height: 25px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.button1NG {
+    color: #00000061;
+    font-weight: 500;
+}
+
+.button2NG {
+    margin-right: 16px;
+    margin-left: 12px;
+     background-color: #1E88E5; 
+    color: white; 
+}
+
+.button2NG:hover{
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+}
+
+.nudgesContainer {
+    position: relative;
+    display: inline-block; /* Adjust based on your layout */
+  }
+
+  /* .nudgesTip {
+    width: 0;
+    height: 0;
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 12px solid red; 
+    position: absolute;
+    right: 5%;
+    transform: translateX(-50%);
+    top: 100%; 
+    z-index: 999;
+  } */
+
+  .nudgesTip {
+    position: absolute;
+    top: 15%; 
+    right: -10px; 
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-left: 10px solid white;
+    transform: translateY(-50%);
+    z-index: 9999;
+    box-shadow: 0px -4px 14px 0px #0000000F, 12px 12px 10px 8px #00000008, -6px 6px 8px -3px #0000000A;
+}
+
+  .totalTasks{
+    /* border: 1px solid red; */
+    text-align: left;
+    margin-top: 2px;
+  }
+
+  .spanTotoalTasks{
+    font-weight: 800;
+  }
