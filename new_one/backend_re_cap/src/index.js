@@ -26,6 +26,7 @@ app.use("/todos", auth, TodosRouter);
 app.use("/todos/comments", CommentsRouter);
 
 app.get("/", (req, res) => {
+  console.log(`My ip address ${req.ip}`);
   res.send("Recap of  Node - Express - MongoDb");
 });
 

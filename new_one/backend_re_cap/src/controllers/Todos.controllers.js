@@ -3,6 +3,7 @@ const { Todos } = require("../modals/Todo.modals");
 const CreateTodos = async (req, res) => {
   try {
     const { title, description } = req.body;
+
     const creatTodos = await Todos({
       title,
       description,
@@ -43,7 +44,12 @@ const GetThePerticulerUserTodos = async (req, res) => {
 
 const getAllTheTodosOnTheHome = async (req, res) => {
   try {
-    const getTheTodos = await Todos.find({});
+    const limit = parseInt(req.query.limit) || 10;
+    const page = parseInt(req.query.page) || 1;
+
+    // Calculate the number of documents to skip
+    const skip = (page - 1) * limit;
+    const getTheTodos = await Todos.find({}).skip(skip).limit(limit);
     return res.status(200).send({
       status: "success",
       msg: "Get the all todos",
@@ -53,6 +59,34 @@ const getAllTheTodosOnTheHome = async (req, res) => {
     return res.status(400).send({
       status: "fail",
       msg: "Getting the some problem to get the todos",
+    });
+  }
+};
+
+const searchItem = async (req, res) => {
+  try {
+    const searchTerm = req.query.q;
+    
+    // Handle case if searchTerm is not provided
+    if (!searchTerm) {
+      return res.status(400).send({ message: "Search term is required" });
+    }
+
+    const results = await Todos.find(
+      { $text: { $search: searchTerm } },
+      { score: { $meta: "textScore" } }
+    ).sort({ score: { $meta: "textScore" } });
+
+    res.status(200).send({
+      status: "success",
+      msg: "Search results fetched successfully",
+      data: results,
+    });
+  } catch (error) {
+    res.status(500).send({
+      status: "fail",
+      msg: "Error performing search",
+      error,
     });
   }
 };
@@ -144,4 +178,5 @@ module.exports = {
   getAllTheTodosOnTheHome,
   deleteTheOwnTodos,
   updateTheOwnTodos,
+  searchItem,
 };

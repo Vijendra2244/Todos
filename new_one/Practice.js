@@ -1248,7 +1248,7 @@
 // function addToList(item, list) {
 //     return list.push(item);
 //   }
-  
+
 //   const result = addToList('apple', ['banana']);
 //   console.log(result);
 //   const set = new Set([1, 1, 2, 3, 4]);
@@ -1262,9 +1262,9 @@
 //     black: true,
 //     yellow: false,
 //   };
-  
+
 //   const colors = ['pink', 'red', 'blue'];
-  
+
 //   console.log(colorConfig.colors[1]);
 
 //   class Person {
@@ -1272,18 +1272,28 @@
 //       this.name = 'Lydia';
 //     }
 //   }
-  
+
 //   Person = class AnotherPerson {
 //     constructor() {
 //       this.name = 'Sarah';
 //     }
 //   };
-  
+
 //   const member = new Person();
 //   console.log(member.name);
-
 
 //   let newList = [1, 2, 3].push(4);
 
 // console.log(newList.push(5));
 // console.log(process.env)
+
+// console.log( 12 | 10 )
+// console.log( 22 | 10 )
+// // console.log(12 ^ 12)
+// console.log(12 <<  2)
+
+// if (12 & (11 == 0)) {
+//   console.log(true);
+// } else {
+//   console.log(false);
+// }

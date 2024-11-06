@@ -19,6 +19,7 @@ const TodoSchema = mongoose.Schema({
     },
   ],
 });
+TodoSchema.index({ title: "text", description: "text" });
 
 const Todos = mongoose.model("Todos", TodoSchema);
 

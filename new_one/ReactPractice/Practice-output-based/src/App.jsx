@@ -1,4 +1,5 @@
 import React, { useReducer, useRef, useState } from "react";
+import CryptoStore from "./CryptoScore";
 // const initialState = { count: 0 };
 // function reducer(state = { initialState }, action) {
 //   switch (action.type) {
@@ -101,6 +102,7 @@ function App() {
           </div>
         );
       })}
+      <CryptoStore/>
     </>
   );
 }
